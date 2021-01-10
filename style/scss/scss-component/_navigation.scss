@@ -1,0 +1,30 @@
+.navigation {
+    
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 35px 200px;
+        
+        
+        li {
+            a {
+                @include title-text;
+                padding: 1em 2em;
+            }
+
+            a:hover {
+                padding: calc(1em - 2px) calc(2em - 2px);
+                border: 2px solid #ffffff;
+                border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            }
+
+            a:active {
+                background: url(../../../img/backg-big.jpg) center center no-repeat;
+                background-size: cover;
+                transition: 0.1s;
+                color: #000;
+            }
+        }
+    }
+}

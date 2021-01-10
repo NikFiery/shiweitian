@@ -1,0 +1,155 @@
+.memu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 100px;
+    background: url(../../../img/backg-big.jpg) center center no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+
+.menu__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background: url(../../../img/black-backgra.jpg)center center no-repeat;
+    background-size:cover;
+
+    h2 {
+        @include title-text;
+    }
+}
+
+.menu__block {
+    display: flex;
+    background: #000;
+    opacity: 0.8;
+    .block__group {
+        .group__container {
+            display: flex;
+            flex-direction: column;
+            .group__line {
+                margin-bottom: 5px;
+                
+                button {
+                    width: 100%;
+                    height: 100%;
+                    padding: 3em 1.5em;
+                    background:red;
+                    @include title-text;
+                    font-size: calc(15px + 0.4vw);
+                }
+            }
+        }
+    }
+}
+
+.block__positions {
+    .positions__container {
+        /// заполню
+    }
+}
+/* ============CARDS==========*/
+
+.cards {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 420px;
+    background: beige;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px;
+    transition: 0.3s ease-in-out;
+
+    .card__img {
+        position: relative;
+        width: 220px;
+        height: 260px;
+        top: -60px;
+        left: 25px;
+        border-radius: 5%;
+        z-index: 1;
+        box-shadow: 0 5px 20px;
+
+        img {
+            width: 220px;
+            height: 260px;
+        }
+    }
+
+    .content {
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        color: rgb(129, 51, 51);
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+
+        h2 {
+            font-size: 20px;
+            color: #850000;
+        }
+
+        p {
+            font-size: 14px;
+            color: #850000;
+            text-align: center;
+        }
+    }
+}
+
+.card:hover {
+    height: 420px;
+}
+
+.cards .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+    background: #131212;
+}
+
+.block__wall {
+    width: 100px;
+    background: url(../../../img/black-backgra.jpg) center center no-repeat;
+    background-size:cover;
+    
+}
+
+//SALADS
+.cards__salads {
+    display: none;
+}
+//SOUP
+.cards__soup {
+    display: none;
+}
+//NOOODLES
+.cards__noodles {
+    display: flex;
+}
+//DESSERTS
+.cards__desserts {
+    display: none;
+}
+//DRINKS
+.cards__drinks {
+    display: none;
+}

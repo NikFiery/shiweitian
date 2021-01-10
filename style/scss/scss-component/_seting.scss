@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 0;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+
+    li {
+        list-style: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}

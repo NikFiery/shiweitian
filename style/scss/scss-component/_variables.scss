@@ -1,0 +1,15 @@
+@mixin title-text {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 500;
+    font-size: calc(15px + 0.2vw);
+    line-height: 24px;
+    color: #fff;
+}
+
+@mixin post-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: calc(13px + 0.137vw);
+    line-height: 22px;
+    color: #fff;
+}
