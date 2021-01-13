@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="home">
         <header>
             <div class="navigation">
                 <ul class="nav">
-                    <li class="nav__title"><a href="#">Home/家</a></li>
-                    <li class="nav__menu"><a href="#">Menu/菜單</a></li>
-                    <li class="nav__photo"><a href="#">Gallery/畫廊</a></li>
-                    <li class="nav__contacts"><a href="#">Contracts/聯繫</a></li>
+                    <li class="nav__title"><a href="#" id="light__home">Home/家</a></li>
+                    <li class="nav__menu"><a href="#menu">Menu/菜單</a></li>
+                    <li class="nav__photo"><a href="#gallery">Gallery/畫廊</a></li>
+                    <li class="nav__contacts"><a href="#footer" id="light__footer">Contracts/聯繫</a></li>
                 </ul>
             </div>
         </header>
@@ -62,9 +62,15 @@
                 </div>
             </section>
             <!--===============MENU=============-->
-            <section class="menu">
+            <section class="menu" id="menu">
                 <div class="menu__title">
-                    <h2>Menu</h2>
+                    <div class="menu__container">
+                        <span class="menu__container--one"></span>
+                        <span class="menu__container--two"></span>
+                        <span class="menu__container--three"></span>
+                        <span class="menu__container--four"></span>
+                        <h2>Menu</h2>
+                    </div>
                 </div>
                 <div class="menu__block">
                     <div class="block__group">
@@ -484,9 +490,15 @@
                 </div>
             </section>
             <!--===============Gallery===================-->
-            <section class="gallery">
+            <section class="gallery" id="gallery">
                 <div class="gallery__title">
-                    <h2>Gallery</h2>
+                    <div class="gallery__container">
+                        <span class="gallery__container--one"></span>
+                        <span class="gallery__container--two"></span>
+                        <span class="gallery__container--three"></span>
+                        <span class="gallery__container--four"></span>
+                        <h2>Gallery</h2>
+                    </div>
                 </div>
                 <div class="gallery__block">
                     <div class="gallery__block--top">
@@ -536,15 +548,14 @@
             </section>
             <section class="contacts"></section>
         </div>
-        <footer>
+        <footer id="footer">
             <div class="footer__container">
                 <div class="footer__left">
-                    <h2>SHIWEITIAN</h2>
+                    <a href="#home" class="footer__title">SHIWEITIAN</a>
                     <div class="left__contact">
                         <a href="tel:+375256345295">Call us! Tel: +375 (25) 634-52-95</a>
                         <span>Address: г.Минск, ул.Киселева, 4.</span>
                         <span>Working hours: ПН-ВС 11:00 - 21:00</span>
-                        <a href="#" class="left__instagram"></a>
                     </div>
                 </div>
                 <div class="footer__right">

@@ -1,14 +1,14 @@
 .navigation {
-    
     ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 35px 200px;
-        
-        
+
+
         li {
             a {
+                position: relative;
                 @include title-text;
                 padding: 1em 2em;
             }
@@ -24,6 +24,28 @@
                 background-size: cover;
                 transition: 0.1s;
                 color: #000;
+            }
+
+            #light__home::after {
+                position: absolute;
+                top: 82px;
+                left: 0px;
+                width: 100px;
+                height: 100px;
+                background: url(../../../img/light.svg)center center no-repeat;
+                background-size: contain;
+                content: '';
+            }
+
+            #light__footer::after {
+                position: absolute;
+                top: 82px;
+                left: 0px;
+                width: 100px;
+                height: 100px;
+                background: url(../../../img/light.svg)center center no-repeat;
+                background-size: contain;
+                content: '';
             }
         }
     }

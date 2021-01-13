@@ -6,7 +6,7 @@
 @import "./scss-component/gallery";
 
 body {
-    background: url(../../img/backg-org.jpg)  center center no-repeat;
+    background: url(../../img/backg-org.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -38,19 +38,24 @@ footer {
     width: 100%;
     padding: 30px 0;
     background: rgba($color: #000000, $alpha: 0.9);
+
     .footer__container {
         display: flex;
         justify-content: space-around;
         align-items: center;
         width: 100%;
         padding: 30px 0;
+
         .footer__left {
+            position: relative;
             display: flex;
             flex-direction: column;
             @include title-text;
             padding: 30px;
             font-size: 22px;
-            h2 {
+
+            .footer__title {
+                position: relative;
                 margin-bottom: 100px;
                 color: orange;
                 box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .5);
@@ -58,23 +63,43 @@ footer {
                 font-size: 30px;
             }
 
+            .footer__title::before {
+                position: absolute;
+                top: 7px;
+                left: -7px;
+                width: 0px;
+                height: 0px;
+                border-bottom: 20px solid orange;
+                border-right: 8px solid transparent;
+                border-left: 8px solid transparent;
+                content: '';
+            }
+
+            .footer__title::after {
+                position: absolute;
+                top: 39px;
+                left: -40px;
+                width: 0px;
+                height: 0px;
+                font-size: 20px;
+                content: 'upwards?';
+            }
+
             .left__contact {
                 display: flex;
                 flex-direction: column;
                 border-radius: 20px;
                 padding: 20px;
+
                 a {
                     color: #fff;
                     margin: 15px 0;
                 }
+
                 span {
                     color: #fff;
                     margin: 15px 0;
                 }
-                .left__instagram {
-                    //заполню
-                }
-
             }
         }
 
@@ -98,12 +123,13 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items:center;
+        align-items: center;
+
         span {
             text-align: center;
             @include post-text;
             font-size: 10px;
-            color:rgba($color: #fff, $alpha: 0.45);
+            color: rgba($color: #fff, $alpha: 0.45);
         }
     }
 }

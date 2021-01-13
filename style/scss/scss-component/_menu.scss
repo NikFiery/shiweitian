@@ -3,8 +3,6 @@
     flex-direction: column;
     width: 100%;
     margin-top: 100px;
-    background: url(../../../img/backg-big.jpg) center center no-repeat;
-    background-size: cover;
     z-index: 100;
 }
 
@@ -14,11 +12,72 @@
     align-items: center;
     text-align: center;
     padding: 20px 0;
-    background: url(../../../img/black-backgra.jpg)center center no-repeat;
-    background-size:cover;
 
-    h2 {
-        @include title-text;
+    .menu__container {
+        position: relative;
+
+        h2 {
+            padding: 30px 15px;
+            @include title-text;
+            font-size: calc(15px + 1.2vw);
+            z-index: 5;
+        }
+
+        .menu__container--one {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1b1b1b;
+            opacity: 0.8;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: animate 6s linear infinite;
+            z-index: -4;
+        }
+
+        .menu__container--two {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1b1b1b;
+            opacity: 0.8;
+            border-radius: 39% 61% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: animate 5s linear infinite;
+            z-index: -4;
+        }
+
+        .menu__container--three {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1b1b1b;
+            opacity: 0.8;
+            border-radius: 39% 61% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: animate 10s linear infinite;
+            z-index: -4;
+        }
+
+        .menu__container--four {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1b1b1b;
+            opacity: 0.8;
+            border-radius: 39% 61% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: animate 4s linear infinite;
+            z-index: -4;
+        }
     }
 }
 
@@ -26,18 +85,21 @@
     display: flex;
     background: #000;
     opacity: 0.8;
+
     .block__group {
         .group__container {
             display: flex;
             flex-direction: column;
+
             .group__line {
                 margin-bottom: 5px;
-                
+
                 button {
                     width: 100%;
                     height: 100%;
                     padding: 3em 1.5em;
-                    background:red;
+                    background: red;
+                    border-radius: 15px;
                     @include title-text;
                     font-size: calc(15px + 0.4vw);
                 }
@@ -46,11 +108,6 @@
     }
 }
 
-.block__positions {
-    .positions__container {
-        /// заполню
-    }
-}
 /* ============CARDS==========*/
 
 .cards {
@@ -88,6 +145,7 @@
         img {
             width: 220px;
             height: 260px;
+            border-radius: 15px;
         }
     }
 
@@ -100,15 +158,20 @@
         visibility: hidden;
         opacity: 0;
         transition: 0.3s ease-in-out;
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s;
+        background: #131212;
 
         h2 {
             font-size: 20px;
-            color: #850000;
+            color: rgb(204, 47, 8);
         }
 
         p {
             font-size: 14px;
-            color: #850000;
+            color: orange;
             text-align: center;
         }
     }
@@ -119,36 +182,48 @@
 }
 
 .cards .card:hover .content {
+    background: black;
+    border-radius: 15px;
+    transition: 0.1s;
+}
+
+/* сохранил для активации анимации(если нужно)
+    .cards .card:hover .content {
     visibility: visible;
     opacity: 1;
     margin-top: -40px;
     transition-delay: 0.3s;
     background: #131212;
 }
+*/
 
 .block__wall {
     width: 100px;
     background: url(../../../img/black-backgra.jpg) center center no-repeat;
-    background-size:cover;
-    
+    background-size: cover;
+
 }
 
 //SALADS
 .cards__salads {
     display: none;
 }
+
 //SOUP
 .cards__soup {
     display: none;
 }
+
 //NOOODLES
 .cards__noodles {
     display: flex;
 }
+
 //DESSERTS
 .cards__desserts {
     display: none;
 }
+
 //DRINKS
 .cards__drinks {
     display: none;
