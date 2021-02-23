@@ -29,6 +29,7 @@
     }
 
     .main__name {
+        position: relative;
         .name__container {
             display: flex;
             justify-content: center;
@@ -42,6 +43,18 @@
                 border-radius: 50%;
                 transition: all 0s ease-out;
             }
+        }
+
+        .name__container::after {
+            position: absolute;
+            top: -30px;
+            left: 200px;
+            width: 200px;
+            height: 100px;
+            background: url(../../../img/Dragons/Dragon.svg)center center no-repeat;
+            background-size: contain;
+            content: '';
+            transform: rotateZ(26deg);
         }
     }
 

@@ -85,6 +85,10 @@ button {
   font-size: calc(13px + 0.04vw);
 }
 
+.title .main__name {
+  position: relative;
+}
+
 .title .main__name .name__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,6 +110,19 @@ button {
   border-radius: 50%;
   -webkit-transition: all 0s ease-out;
   transition: all 0s ease-out;
+}
+
+.title .main__name .name__container::after {
+  position: absolute;
+  top: -30px;
+  left: 200px;
+  width: 200px;
+  height: 100px;
+  background: url(../../../img/Dragons/Dragon.svg) center center no-repeat;
+  background-size: contain;
+  content: '';
+  -webkit-transform: rotateZ(26deg);
+          transform: rotateZ(26deg);
 }
 
 .title .main__kitchen {
@@ -714,6 +731,7 @@ button {
 }
 
 .gallery__block {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -756,6 +774,7 @@ button {
 .gallery__block .gallery__block--top .article,
 .gallery__block .gallery__block--mid .article,
 .gallery__block .gallery__block--bottom .article {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -797,10 +816,38 @@ button {
   border-radius: 15px;
 }
 
+.gallery__block .gallery__block--top .article span span::after,
+.gallery__block .gallery__block--mid .article span span::after,
+.gallery__block .gallery__block--bottom .article span span::after {
+  position: absolute;
+  top: -30px;
+  left: 200px;
+  width: 200px;
+  height: 100px;
+  background: url(../../../img/Dragons/two-drag.svg) center center no-repeat;
+  background-size: contain;
+  content: '';
+  -webkit-transform: rotateZ(26deg);
+          transform: rotateZ(26deg);
+}
+
 .gallery__block .gallery__block--mid .img__backgraund {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.gallery__block .gallery__block--mid::after {
+  position: absolute;
+  top: -200px;
+  left: 100px;
+  width: 100px;
+  height: 200px;
+  background: url(../../../img/Dragons/china-drag.svg) center center no-repeat;
+  background-size: cover;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+  content: '';
 }
 
 body {

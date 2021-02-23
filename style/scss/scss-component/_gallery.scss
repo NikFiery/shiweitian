@@ -80,6 +80,7 @@
 }
 
 .gallery__block {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,6 +105,7 @@
         }
 
         .article {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -125,12 +127,38 @@
                 border-radius: 15px;
             }
         }
+
+        .article span {
+            span::after {
+                position: absolute;
+                top: -30px;
+                left: 200px;
+                width: 200px;
+                height: 100px;
+                background: url(../../../img/Dragons/two-drag.svg)center center no-repeat;
+                background-size: contain;
+                content: '';
+                transform: rotateZ(26deg);
+            }
+        }
     }
 
     .gallery__block--mid {
         .img__backgraund {
             order: 1;
         }
+    }
+
+    .gallery__block--mid::after {
+        position: absolute;
+        top: -200px;
+        left: 100px;
+        width: 100px;
+        height: 200px;
+        background: url(../../../img/Dragons/china-drag.svg) center center no-repeat;
+        background-size: cover;
+        transform: rotateZ(45deg);
+        content: '';
     }
 
 }
