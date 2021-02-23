@@ -12,6 +12,7 @@
     align-items: center;
     text-align: center;
     padding: 20px 0;
+    margin-bottom: 40px;
 
     .menu__container {
         position: relative;
@@ -90,6 +91,9 @@
         .group__container {
             display: flex;
             flex-direction: column;
+            height: 100%;
+            justify-content: space-around;
+            padding-left: 20px;
 
             .group__line {
                 margin-bottom: 5px;
@@ -99,6 +103,7 @@
                     height: 100%;
                     padding: 3em 1.5em;
                     background: red;
+                    border: 2px rgb(255, 144, 16) solid;
                     border-radius: 15px;
                     @include title-text;
                     font-size: calc(15px + 0.4vw);

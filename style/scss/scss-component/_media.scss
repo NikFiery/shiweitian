@@ -1,0 +1,114 @@
+@media (min-width: 1280px) {
+    .title {
+        justify-content: space-evenly;
+    }
+
+    .main__rest {
+        width: 400px;
+    }
+
+    .main__kitchen {
+        width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        margin-top: 190px;
+        padding: 0 150px;
+    }
+
+    .title .main__rest .rest__container {
+        h1 {
+            font-size: calc(15px + 1vw);
+        };
+
+        p {
+            margin-top: 20px;
+            line-height: 37px;
+            font-size: calc(13px + 1vw);
+        }
+    }
+
+    .title .main__kitchen .kitchen__container {
+        h2{
+            font-size: calc(15px + 1vw);
+        }
+
+        p {
+            margin-top: 20px;
+            line-height: 37px;
+            font-size: calc(13px + 1vw);
+        };
+    }
+
+    .title .main__rest {
+        width: 85%;
+        span {
+            width: 100%;
+        }
+    }
+
+    .navigation ul li a {
+        padding: 1em;
+        font-size: calc(15px + 0.7vw);
+    }
+
+    .navigation ul {
+        margin: 35px 65px;
+    }
+
+    .gallery__block {
+        padding: 0 20px;
+    }
+
+    footer .footer__container .footer__left .footer__title::before {
+        top: 0;
+        left: 40px;
+    }
+
+    footer .footer__container .footer__left .footer__title::after {
+        left: 6px;
+    }
+
+    .main__name {
+        margin-top: 50px;
+    }
+
+    .title .main__kitchen {
+        width: 85%;
+    }
+
+    .menu__block .block__group .group__container {
+        justify-content: start;
+    }
+}
+
+@media (max-width: 720px) {
+    .navigation ul li a {
+        font-size: calc(12px + 0.7vw);
+    }
+
+    .title {
+        padding: 0 40px;
+    }
+
+    footer .footer__container .footer__right .right__container {
+        width: 350px;
+        height: 350px;
+    }
+
+    footer .footer__container .footer__left .left__contact {
+        font-size: calc(10px + 0.2em);
+    }
+
+    .gallery__block .gallery__block--top .img__backgraund img,
+    .gallery__block .gallery__block--mid .img__backgraund img,
+    .gallery__block .gallery__block--bottom .img__backgraund img {
+        width: 300px;
+        height: 300px;
+    }
+}

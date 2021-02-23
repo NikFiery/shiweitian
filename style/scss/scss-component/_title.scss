@@ -23,6 +23,7 @@
             }
             p {
                 @include post-text;
+                font-size: calc(13px + 0.04vw);
             }
         }
     }
@@ -63,6 +64,7 @@
             }
             p {
                 @include post-text;
+                font-size: calc(13px + 0.04vw);
             }
         }
     }

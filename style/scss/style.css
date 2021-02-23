@@ -82,6 +82,7 @@ button {
   font-size: calc(13px + 0.137vw);
   line-height: 22px;
   color: #fff;
+  font-size: calc(13px + 0.04vw);
 }
 
 .title .main__name .name__container {
@@ -147,6 +148,7 @@ button {
   font-size: calc(13px + 0.137vw);
   line-height: 22px;
   color: #fff;
+  font-size: calc(13px + 0.04vw);
 }
 
 .main__rest span:nth-child(1), .main__kitchen span:nth-child(1) {
@@ -309,7 +311,7 @@ button {
 .navigation ul li #light__home::after {
   position: absolute;
   top: 82px;
-  left: 0px;
+  left: 20px;
   width: 100px;
   height: 100px;
   background: url(../../../img/light.svg) center center no-repeat;
@@ -320,7 +322,7 @@ button {
 .navigation ul li #light__footer::after {
   position: absolute;
   top: 82px;
-  left: 0px;
+  left: 50px;
   width: 100px;
   height: 100px;
   background: url(../../../img/light.svg) center center no-repeat;
@@ -353,6 +355,7 @@ button {
           align-items: center;
   text-align: center;
   padding: 20px 0;
+  margin-bottom: 40px;
 }
 
 .menu__title .menu__container {
@@ -450,6 +453,10 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 20px;
 }
 
 .menu__block .block__group .group__container .group__line {
@@ -461,6 +468,7 @@ button {
   height: 100%;
   padding: 3em 1.5em;
   background: red;
+  border: 2px #ff9010 solid;
   border-radius: 15px;
   font-family: 'Mitr', sans-serif;
   font-weight: 500;
@@ -623,6 +631,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 20px 0 60px 0;
 }
 
 .gallery .gallery__title .gallery__container {
@@ -741,6 +750,7 @@ button {
   width: 400px;
   height: 400px;
   border-radius: 10%;
+  size: center center no-repeat;
 }
 
 .gallery__block .gallery__block--top .article,
@@ -842,7 +852,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 30px 0;
+  padding: 40px 0;
   background: rgba(0, 0, 0, 0.9);
 }
 
@@ -969,5 +979,108 @@ footer .footer__description span {
   color: #fff;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.45);
+}
+
+@media (min-width: 1280px) {
+  .title {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .main__rest {
+    width: 400px;
+  }
+  .main__kitchen {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 190px;
+    padding: 0 150px;
+  }
+  .title .main__rest .rest__container h1 {
+    font-size: calc(15px + 1vw);
+  }
+  .title .main__rest .rest__container p {
+    margin-top: 20px;
+    line-height: 37px;
+    font-size: calc(13px + 1vw);
+  }
+  .title .main__kitchen .kitchen__container h2 {
+    font-size: calc(15px + 1vw);
+  }
+  .title .main__kitchen .kitchen__container p {
+    margin-top: 20px;
+    line-height: 37px;
+    font-size: calc(13px + 1vw);
+  }
+  .title .main__rest {
+    width: 85%;
+  }
+  .title .main__rest span {
+    width: 100%;
+  }
+  .navigation ul li a {
+    padding: 1em;
+    font-size: calc(15px + 0.7vw);
+  }
+  .navigation ul {
+    margin: 35px 65px;
+  }
+  .gallery__block {
+    padding: 0 20px;
+  }
+  footer .footer__container .footer__left .footer__title::before {
+    top: 0;
+    left: 40px;
+  }
+  footer .footer__container .footer__left .footer__title::after {
+    left: 6px;
+  }
+  .main__name {
+    margin-top: 50px;
+  }
+  .title .main__kitchen {
+    width: 85%;
+  }
+  .menu__block .block__group .group__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+@media (max-width: 720px) {
+  .navigation ul li a {
+    font-size: calc(12px + 0.7vw);
+  }
+  .title {
+    padding: 0 40px;
+  }
+  footer .footer__container .footer__right .right__container {
+    width: 350px;
+    height: 350px;
+  }
+  footer .footer__container .footer__left .left__contact {
+    font-size: calc(10px + 0.2em);
+  }
+  .gallery__block .gallery__block--top .img__backgraund img,
+  .gallery__block .gallery__block--mid .img__backgraund img,
+  .gallery__block .gallery__block--bottom .img__backgraund img {
+    width: 300px;
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
