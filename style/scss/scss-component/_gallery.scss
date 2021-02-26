@@ -1,7 +1,7 @@
 .gallery {
     display: flex;
     flex-direction: column;
-    padding: 30px 0;
+    padding: 70px 0;
 
     .gallery__title {
         display: flex;
@@ -125,20 +125,6 @@
                 color: #1b1b1b;
                 padding: 15px;
                 border-radius: 15px;
-            }
-        }
-
-        .article span {
-            span::after {
-                position: absolute;
-                top: -30px;
-                left: 200px;
-                width: 200px;
-                height: 100px;
-                background: url(../../../img/Dragons/two-drag.svg)center center no-repeat;
-                background-size: contain;
-                content: '';
-                transform: rotateZ(26deg);
             }
         }
     }

@@ -83,7 +83,11 @@
     }
 
     .menu__block .block__group .group__container {
-        justify-content: start;
+        justify-content: space-evenly;
+    }
+
+    .menu__block {
+        height: 800px;
     }
 }
 
@@ -110,5 +114,111 @@
     .gallery__block .gallery__block--bottom .img__backgraund img {
         width: 300px;
         height: 300px;
+    }
+}
+
+@media (max-width: 620px) {
+    .title  {
+        .main__rest {
+            width: 100%;
+
+            .rest__container {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+        }
+        
+        .main__kitchen {
+            width: 100%;
+
+            .kitchen__container {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+        }
+    }
+
+    .title .main__rest span {
+        display: none;
+    }
+
+    .title .main__kitchen span {
+        display: none;
+    }
+
+    .gallery__block .gallery__block--top .article span,
+    .gallery__block .gallery__block--mid .article span,
+    .gallery__block .gallery__block--bottom .article span {
+            line-height: 16px;
+            font-size: calc(13px + 0.5vw);
+            padding: 0 20px 0 30px;
+    }
+
+    .gallery__block .gallery__block--top,
+    .gallery__block .gallery__block--mid,
+    .gallery__block .gallery__block--bottom {
+        padding: 30px 0;
+    }
+
+    .gallery__block .gallery__block--top .img__backgraund img,
+    .gallery__block .gallery__block--mid .img__backgraund img,
+    .gallery__block .gallery__block--bottom .img__backgraund img {
+        width: 250px;
+        height: 250px;
+    }
+
+    footer .footer__container .footer__right .right__container {
+    width: 300px;
+    height: 300px;
+    }
+}
+
+@media(max-width: 530px) {
+    footer .footer__container {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 530px) {
+    .navigation ul li a {
+        padding: 0.2em;
+    }
+
+    .card {
+        width: 235px;
+        margin: 30px 0;
+
+        .card__img {
+            width: 170px;
+
+            img {
+                width: 170px;
+            }
+        }
+    }
+
+    .menu__block .block__group .group__container .group__line button {
+        padding: 1.5em 0.3em;
+    }
+
+    .gallery__block .gallery__block--mid::after {
+        left: 50px;
+        transform: rotateZ(33deg);
+    }
+
+    .navigation ul li #light__home::after {
+        top: 67px;
+        left: 0;
+    }
+
+    .navigation ul li #light__footer::after {
+        top: 67px;
+        left: -20px;
+    }
+
+    footer .footer__container .footer__left .footer__title::before {
+        left: 0;
+    }
+
+    footer .footer__container .footer__left .footer__title::after {
+        left: -37px;
     }
 }

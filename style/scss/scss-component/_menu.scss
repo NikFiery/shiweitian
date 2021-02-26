@@ -84,6 +84,7 @@
 
 .menu__block {
     display: flex;
+    height: 1040px;
     background: #000;
     opacity: 0.8;
 
@@ -232,4 +233,8 @@
 //DRINKS
 .cards__drinks {
     display: none;
+}
+
+.block__positions {
+    overflow: scroll;
 }
