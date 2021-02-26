@@ -239,6 +239,16 @@
         top: -55px;
         left: 176px;
     }
+
+    .title .main__rest .rest__container p {
+        line-height: 23px;
+        font-size: calc(12px + 1vw);
+    }
+
+    .title .main__kitchen .kitchen__container p {
+        line-height: 27px;
+        font-size: calc(14px + 1vw);
+    }
 }
 
 @media(max-width: 414px) { // IPHONE 8 PLUS
@@ -249,16 +259,6 @@
     .gallery__block .gallery__block--mid::after {
         left: 32px;
         transform: rotate(27deg);
-    }
-
-    .title .main__rest .rest__container p {
-        line-height: 27px;
-        font-size: calc(14px + 1vw);
-    }
-
-    .title .main__kitchen .kitchen__container p {
-        line-height: 27px;
-        font-size: calc(14px + 1vw);
     }
 
     .title .main__name .name__container img {

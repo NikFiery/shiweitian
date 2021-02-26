@@ -1231,6 +1231,14 @@ footer .footer__description span {
     top: -55px;
     left: 176px;
   }
+  .title .main__rest .rest__container p {
+    line-height: 23px;
+    font-size: calc(12px + 1vw);
+  }
+  .title .main__kitchen .kitchen__container p {
+    line-height: 27px;
+    font-size: calc(14px + 1vw);
+  }
 }
 
 @media (max-width: 414px) {
@@ -1241,14 +1249,6 @@ footer .footer__description span {
     left: 32px;
     -webkit-transform: rotate(27deg);
             transform: rotate(27deg);
-  }
-  .title .main__rest .rest__container p {
-    line-height: 27px;
-    font-size: calc(14px + 1vw);
-  }
-  .title .main__kitchen .kitchen__container p {
-    line-height: 27px;
-    font-size: calc(14px + 1vw);
   }
   .title .main__name .name__container img {
     width: 350px;
