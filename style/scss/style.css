@@ -318,7 +318,7 @@ button {
 }
 
 .navigation ul li a:active {
-  background: url(../../../img/backg-big.jpg) center center no-repeat;
+  background: url(../../img/backg-big.jpg) center center no-repeat;
   background-size: cover;
   -webkit-transition: 0.1s;
   transition: 0.1s;
