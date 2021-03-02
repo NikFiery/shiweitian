@@ -5,15 +5,11 @@
 @import "./scss-component/menu";
 @import "./scss-component/gallery";
 
-body {
-    background: url(../../img/backg-org.jpg) center center no-repeat;
-    background-size: cover;
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;
     margin: auto;
+    background: url(../../img/backg-org.jpg) center center repeat;
 }
 
 header {

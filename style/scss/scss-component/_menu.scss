@@ -103,11 +103,25 @@
                     width: 100%;
                     height: 100%;
                     padding: 3em 1.5em;
-                    background: red;
-                    border: 2px rgb(255, 144, 16) solid;
-                    border-radius: 15px;
+                    background: url(../../../img/Sun-Tornado.svg) center center no-repeat;
+                    background-size:cover;
+                    border: 2px rgb(0, 0, 0) solid;
+                    border-radius: 15%;
                     @include title-text;
                     font-size: calc(15px + 0.4vw);
+                    color: rgb(255, 255, 255);
+                    font-weight: 500;
+                    font-family: 'Mitr',
+                    sans-serif;
+                }
+
+                button:hover {
+                    color: #000000;
+                    border-radius: 20%;
+                }
+
+                button:active {
+                    color: red;
                 }
             }
         }

@@ -485,15 +485,28 @@ button {
   width: 100%;
   height: 100%;
   padding: 3em 1.5em;
-  background: red;
-  border: 2px #ff9010 solid;
-  border-radius: 15px;
+  background: url(../../../img/Sun-Tornado.svg) center center no-repeat;
+  background-size: cover;
+  border: 2px black solid;
+  border-radius: 15%;
   font-family: 'Mitr', sans-serif;
   font-weight: 500;
   font-size: calc(15px + 0.2vw);
   line-height: 24px;
   color: #fff;
   font-size: calc(15px + 0.4vw);
+  color: white;
+  font-weight: 500;
+  font-family: 'Mitr', sans-serif;
+}
+
+.menu__block .block__group .group__container .group__line button:hover {
+  color: #000000;
+  border-radius: 20%;
+}
+
+.menu__block .block__group .group__container .group__line button:active {
+  color: red;
 }
 
 /* ============CARDS==========*/
@@ -840,11 +853,6 @@ button {
   content: '';
 }
 
-body {
-  background: url(../../img/backg-org.jpg) center center no-repeat;
-  background-size: cover;
-}
-
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -854,6 +862,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+  background: url(../../img/backg-org.jpg) center center repeat;
 }
 
 header {
