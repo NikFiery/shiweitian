@@ -862,7 +862,25 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
-  background: url(../../img/backg-org.jpg) center center repeat;
+}
+
+.wrapper::before {
+  content: '';
+  position: fixed;
+  /* Фиксируем на одном месте */
+  left: 0;
+  right: 0;
+  /* Вся ширин */
+  top: 0;
+  bottom: 0;
+  /* Вся высота */
+  z-index: -1;
+  /* Фон ниже текста */
+  /* Параметры фона */
+  background: url(../../img/backg-org.jpg) center/cover repeat;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  /* Размытие */
 }
 
 header {
