@@ -4,7 +4,7 @@
 @import "./scss-component/navigation";
 @import "./scss-component/menu";
 @import "./scss-component/gallery";
-
+@import "./scss-component/modalWind";
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -39,6 +39,7 @@ header {
 }
 
 .main {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -51,7 +52,7 @@ footer {
     align-items: center;
     width: 100%;
     padding: 40px 0;
-    background: rgba($color: #000000, $alpha: 0.9);
+    background: rgba($color: #000000, $alpha: 0.87);
 
     .footer__container {
         display: flex;

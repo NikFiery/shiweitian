@@ -459,8 +459,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   height: 1040px;
-  background: #000;
-  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .menu__block .block__group .group__container {
@@ -561,7 +560,7 @@ button {
 .card .card__img img {
   width: 220px;
   height: 260px;
-  border-radius: 15px;
+  border-radius: 1px;
 }
 
 .card .content {
@@ -853,6 +852,15 @@ button {
   content: '';
 }
 
+.modalWind {
+  position: absolute;
+  display: none;
+  width: 500px;
+  height: 500px;
+  background: red;
+  z-index: 100;
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -892,6 +900,7 @@ header {
 }
 
 .main {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -917,7 +926,7 @@ footer {
           align-items: center;
   width: 100%;
   padding: 40px 0;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.87);
 }
 
 footer .footer__container {
